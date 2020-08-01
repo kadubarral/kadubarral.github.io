@@ -21,30 +21,54 @@
   <!-- Custom CSS -->
   <link href="css/stylish-portfolio.css" rel="stylesheet">
 
+  <!-- Language -->
+  <script id="language_script" data-languages="pt,en" src="js/language.js"></script>
+  <link rel="stylesheet" href="css/language.css">
+
 </head>
 
 <body id="page-top">
-
   <!-- Navigation -->
   <a class="menu-toggle rounded" href="#">
     <i class="fas fa-bars"></i>
   </a>
   <nav id="sidebar-wrapper">
-    <ul class="sidebar-nav">
+    <ul lang="pt" class="sidebar-nav">
       <li class="sidebar-brand">
-        <a class="js-scroll-trigger" href="#page-top">SRE</a>
+        <a class="js-scroll-trigger" href="#page-top">Kadu Barral - SRE</a>
       </li>
       <li class="sidebar-nav-item">
         <a class="js-scroll-trigger" href="#page-top">Home</a>
       </li>
       <li class="sidebar-nav-item">
-        <a class="js-scroll-trigger" href="#about">About</a>
+        <a class="js-scroll-trigger" href="#about-pt">Sobre</a>
       </li>
       <li class="sidebar-nav-item">
-        <a class="js-scroll-trigger" href="#services">Services</a>
+        <a class="js-scroll-trigger" href="#services-pt">Serviços</a>
       </li>
       <li class="sidebar-nav-item">
-        <a class="js-scroll-trigger" href="#portfolio">Portfolio</a>
+        <a class="js-scroll-trigger" href="#portfolio-pt">Portfólio</a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a class="js-scroll-trigger" href="#contact">Contato</a>
+      </li>
+    </ul>
+
+    <ul lang="en" class="sidebar-nav">
+      <li class="sidebar-brand">
+        <a class="js-scroll-trigger" href="#page-top">Kadu Barral - SRE</a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a class="js-scroll-trigger" href="#page-top">Home</a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a class="js-scroll-trigger" href="#about-en">About</a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a class="js-scroll-trigger" href="#services-en">Services</a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a class="js-scroll-trigger" href="#portfolio-en">Portfolio</a>
       </li>
       <li class="sidebar-nav-item">
         <a class="js-scroll-trigger" href="#contact">Contact</a>
@@ -59,13 +83,32 @@
       <h1 class="mb-5">
         <em>Site Reliability Engineer</em>
       </h1>
-      <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Find Out More</a>
+      <language class="languageFrameClick" default="pt" data-type="flag"></language>
+      <a lang="pt" class="btn btn-primary btn-xl js-scroll-trigger" href="#about-pt">Saiba Mais</a>
+      <a lang="en" class="btn btn-primary btn-xl js-scroll-trigger" href="#about-en">Find Out More</a>
     </div>
     <div class="overlay"></div>
   </header>
 
   <!-- About -->
-  <section class="content-section bg-light" id="about">
+  <section lang="pt" class="content-section bg-light" id="about-pt">
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-lg-10 mx-auto">
+          <h2>SRE é a retaguarda para a Transformação Digital das empresas!</h2>
+          <p class="lead mb-5">
+            Nossa missão é resolver a tensão entre equipes de infraestrutura e desenvolvimento 
+            de código, utilizamos os princípios de Site Reliability Engineering (SRE) para 
+            assegurar a disponibilidade, performance e escalabilidade dos sistemas, sem perder 
+            a agilidade das entregas.
+          </p>
+          <a class="btn btn-dark btn-xl js-scroll-trigger" href="#services-pt">O que Oferecemos</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section lang="en" class="content-section bg-light" id="about-en">
     <div class="container text-center">
       <div class="row">
         <div class="col-lg-10 mx-auto">
@@ -75,14 +118,100 @@
             we use Site Reliability Engineering (SRE) principles to ensure system's availability, 
             performance and scalability, without losing the agility of deliveries.
           </p>
-          <a class="btn btn-dark btn-xl js-scroll-trigger" href="#services">What We Offer</a>
+          <a class="btn btn-dark btn-xl js-scroll-trigger" href="#services-en">What We Offer</a>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Services -->
-  <section class="content-section bg-primary text-white text-center" id="services">
+  <section lang="pt" class="content-section bg-primary text-white text-center" id="services-pt">
+    <div class="container">
+      <div class="content-section-heading">
+        <h3 class="text-secondary mb-0">Serviços</h3>
+        <h2 class="mb-5">O que Temos a Oferecer</h2>
+      </div>
+      <div class="row">
+        <div class="col-lg-3 col-md-6">
+          <span class="service-icon rounded-circle mx-auto mb-3">
+            <i class="icon-like"></i>
+          </span>
+          <h4>
+            <strong>Eficiencia</strong>
+          </h4>
+          <p class="text-faded mb-0">Manter a disponibilidade e desempenho dos sistemas.</p>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+          <span class="service-icon rounded-circle mx-auto mb-3">
+            <i class="icon-clock"></i>
+          </span>
+          <h4>
+            <strong>Agilidade</strong>
+          </h4>
+          <p class="text-faded mb-0">Perseguir velocidade de implantações sem violar os níveis de serviço.</p>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-5 mb-md-0">
+          <span class="service-icon rounded-circle mx-auto mb-3">
+            <i class="icon-speedometer"></i>
+          </span>
+          <h4>
+            <strong>Monitoração</strong>
+          </h4>
+          <p class="text-faded mb-0">Criação de alertas, abertura de tickets e automação baseada em eventos.</p>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <span class="service-icon rounded-circle mx-auto mb-3">
+            <i class="icon-fire"></i>
+          </span>
+          <h4>
+            <strong>Contenção de Crises</strong>
+          </h4>
+          <p class="text-faded mb-0">Respostas rápidas durante indisponibilidades e war rooms.</p>
+        </div>
+      </div>
+      <hr>
+      <div class="row">
+        <div class="col-lg-3 col-md-6">
+          <span class="service-icon rounded-circle mx-auto mb-3">
+            <i class="icon-graph"></i>
+          </span>
+          <h4>
+            <strong>Capacity Planning</strong>
+          </h4>
+          <p class="text-faded mb-0">Previsão de demandas e planejamento de capacidade.</p>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <span class="service-icon rounded-circle mx-auto mb-3">
+            <i class="icon-layers"></i>
+          </span>
+          <h4>
+            <strong>Resiliência</strong>
+          </h4>
+          <p class="text-faded mb-0">Entregar infraestruturas com alta disponibilidade para as aplicações.</p>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <span class="service-icon rounded-circle mx-auto mb-3">
+            <i class="icon-rocket"></i>
+          </span>
+          <h4>
+            <strong>Inovação</strong>
+          </h4>
+          <p class="text-faded mb-0">Implementar inovações em infraestrutura on premises e nuvem.</p>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+          <span class="service-icon rounded-circle mx-auto mb-3">
+            <i class="icon-pencil"></i>
+          </span>
+          <h4>
+            <strong>Arquitetura</strong>
+          </h4>
+          <p class="text-faded mb-0">Garantir um desenho coeso nos projetos de engenharia de software.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section lang="en" class="content-section bg-primary text-white text-center" id="services-en">
     <div class="container">
       <div class="content-section-heading">
         <h3 class="text-secondary mb-0">Services</h3>
@@ -91,7 +220,7 @@
       <div class="row">
         <div class="col-lg-3 col-md-6">
           <span class="service-icon rounded-circle mx-auto mb-3">
-            <i class="icon-check"></i>
+            <i class="icon-like"></i>
           </span>
           <h4>
             <strong>Efficiency</strong>
@@ -170,15 +299,76 @@
 
   <!-- Callout -->
   <section class="callout">
-    <div class="container text-white text-center">
+    <div lang="pt" class="container text-white text-center">
+      <h2 class="mx-auto mb-3">Nosso maior valor é a experiencia do usuário, e ela precisa ser...<br>
+        <em class="text-secondary">simplesmente incrível!</em></h2>
+      <a class="btn btn-primary btn-xl" href="mailto:kadubarral@gmail.com">Entre em Contato!</a>
+    </div>
+
+    <div lang="en" class="container text-white text-center">
       <h2 class="mx-auto mb-3">Our greatest value is the user experience, and it needs to be...<br>
         <em class="text-secondary">just awesome!</em></h2>
-      <a class="btn btn-primary btn-xl" href="mailto:kadubarral@gmail.com">E-mail Us!</a>
+      <a class="btn btn-primary btn-xl" href="mailto:kadubarral@gmail.com">Contact Us!</a>
     </div>
   </section>
 
   <!-- Portfolio -->
-  <section class="content-section" id="portfolio">
+  <section lang="pt" class="content-section" id="portfolio-pt">
+    <div class="container">
+      <div class="content-section-heading text-center">
+        <h3 class="text-secondary mb-0">Portfólio</h3>
+        <h2 class="mb-5">Projetos Recentes</h2>
+      </div>
+      <div class="row no-gutters">
+        <div class="col-lg-6">
+          <a class="portfolio-item" href="#!">
+            <div class="caption">
+              <div class="caption-content">
+                <div class="h2">SKA</div>
+                <p class="mb-0">Simple Kubernetes Administrator.</p>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/portfolio-1.jpg" alt="">
+          </a>
+        </div>
+        <div class="col-lg-6">
+          <a class="portfolio-item" href="https://speakerdeck.com/kadubarral">
+            <div class="caption">
+              <div class="caption-content">
+                <div class="h2">Sessões e Workshops</div>
+                <p class="mb-0">Algumas apresentações em conferências e workshops.</p>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/portfolio-2.jpg" alt="">
+          </a>
+        </div>
+        <div class="col-lg-6">
+          <a class="portfolio-item" href="https://medium.com/@kadubarral/10-dicas-para-n%C3%A3o-ficar-louco-com-as-mensagens-do-slack-5f433edb60e7">
+            <div class="caption">
+              <div class="caption-content">
+                <div class="h2">Slack</div>
+                <p class="mb-0">Como não ficar louco com as mensagens do Slack.</p>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/portfolio-3.jpg" alt="">
+          </a>
+        </div>
+        <div class="col-lg-6">
+          <a class="portfolio-item" href="#!">
+            <div class="caption">
+              <div class="caption-content">
+                <div class="h2">Nelson</div>
+                <p class="mb-0">Another Oracle Database Analytics.</p>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/portfolio-4.jpg" alt="">
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section lang="en" class="content-section" id="portfolio-en">
     <div class="container">
       <div class="content-section-heading text-center">
         <h3 class="text-secondary mb-0">Portfolio</h3>
@@ -272,7 +462,7 @@
           </a>
         </li>
       </ul>
-      <p class="text-muted small mb-0">Copyright &copy; Kadu Barral ME 2020</p>
+      <p class="text-muted small mb-0">Copyright &copy; Kadu Barral ME 2020 - CNPJ: 11.155.731/0001-22</p>
       <p class="text-muted small mb-0">Thanks to <a href="https://startbootstrap.com/themes/stylish-portfolio/">Stylish Portfolio</a> for the great template <i class="fas fa-heart"></i> </p>
     </div>
   </footer>

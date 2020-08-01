@@ -1,0 +1,17 @@
+language {
+    position: fixed;
+    top: 15px;
+    left: 5px;
+    height: 40px;
+    width: 10%;
+}
+
+language img {
+    height: 75%;
+    margin: 5px 10px 10px 5px;
+}
+
+language img.selected {
+    height: 100%;
+    margin: 5px 10px 10px 5px;
+}
